@@ -1,0 +1,9 @@
+<div class="sample-container">
+  <ejs-filemanager #file id="overview" [ajaxSettings]="ajaxSettings" (created)="created($event)"
+    [allowDragAndDrop]="allowDrag" (fileDragStop)="filedragStop($event)" (success)="success($event)" [view]="view">
+  </ejs-filemanager>
+  <br>
+  <!-- <input type="file" id='uploadfiles'> -->
+  <br><br>
+  <ejs-uploader #defaultupload [asyncSettings]='path'></ejs-uploader>
+</div>
